@@ -69,18 +69,20 @@ ejemplo:
 SELECT * FROM Customers
 WHERE Country='Germany' AND (City='Berlin' OR City='München'); 
 
-##SQL ORDER BY
+## SQL ORDER BY
 
 Se utiliza para elegir el orden en que vamos a mostrar los resultados de forma ASC|DESC
 Por defecto las Bases de datos estan ordenadas de manera aleatoria
 
 *Ejemplo*
+
 SELECT * FROM Customers
 ORDER BY PostalCode ASC;
 
-##INSERT INTO
+## INSERT INTO
 Se usa para añadir datos a nuestra base de datos
 
 *Ejemplos*
+
 INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
 VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
