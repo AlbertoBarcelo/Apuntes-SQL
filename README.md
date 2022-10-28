@@ -64,7 +64,7 @@ WHERE NOT Country='Uk' and not City='Berlin';
 
 Con los parentesis 
 
-ejemplo:
+*Ejemplo*
 
 SELECT * FROM Customers
 WHERE Country='Germany' AND (City='Berlin' OR City='München'); 
@@ -99,3 +99,10 @@ IS NULL and IS NOT NULL
 SELECT CustomerName, ContactName, Address
 FROM Customers
 WHERE Address IS NULL;
+
+## DELETE
+Se utiliza para eliminar rejistros de la base de datos
+
+*Ejemplos*
+
+ DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste'; 
