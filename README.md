@@ -68,3 +68,11 @@ ejemplo:
 
 SELECT * FROM Customers
 WHERE Country='Germany' AND (City='Berlin' OR City='München'); 
+
+##SQL ORDER BY
+
+Se utiliza para elegir el orden en que vamos a mostrar los resultados de forma ASC|DESC
+
+*Ejemplo*
+SELECT * FROM Customers
+ORDER BY PostalCode ASC;
