@@ -86,3 +86,16 @@ Se usa para añadir datos a nuestra base de datos
 
 INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
 VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
+
+## NULL Values
+Sirve para identificar un campo desconocido o para hacer la referencia a la nada
+
+*Tipos*
+
+IS NULL and IS NOT NULL
+
+*Ejemplos*
+
+SELECT CustomerName, ContactName, Address
+FROM Customers
+WHERE Address IS NULL;
