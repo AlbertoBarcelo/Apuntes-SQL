@@ -106,3 +106,15 @@ Se utiliza para eliminar rejistros de la base de datos
 *Ejemplos*
 
  DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste'; 
+
+
+ ## MIN / MAX
+ Min se utiliza para encontrar el minimo de algo y el max se utiliza para encontrar el mayor de algo
+ *Ejemplos*
+ SELECT MIN(Price) FROM Products;
+ 
+ Si hay varios productos con el mismo minimo/maximo se muestra solo un producto
+ 
+ ## ALERTA
+ Las funcionees (max, min, avg, sum, count) no se pueden acompañar de otra columna
+Lo que se ha de hacer es lo siguiente: SELECT Productname From Products where Price=(select min(Price) from Products);
