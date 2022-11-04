@@ -128,7 +128,7 @@ Cuales son los productos con un precio mayor a los de la media de precios de los
 
 ## EXPRESIONES REGULARES
 
-Patrones
+*PATRONES*
 
 %a acaba en a
 
