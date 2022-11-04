@@ -117,4 +117,10 @@ Se utiliza para eliminar rejistros de la base de datos
  
  ## ALERTA
  Las funcionees (max, min, avg, sum, count) no se pueden acompañar de otra columna
-Lo que se ha de hacer es lo siguiente: SELECT Productname From Products where Price=(select min(Price) from Products);
+ 
+ Lo que se ha de hacer es lo siguiente: SELECT Productname From Products where Price=(select min(Price) from Products);
+
+*PREGUNTA EXAMEN*
+Que trabajadores son los que tienen el salario mayor a la media de salarios
+
+Cuales son los productos con un precio mayor a los de la media de precios de los productos:SELECT Productname, Price From Products where Price >(select avg(Price) from Products);
