@@ -140,3 +140,14 @@ a%a que empiece y acabe en a
 
 _ un caracter
 
+## UNION
+
+## GROUP BY
+
+*Ejemplos*
+
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+ORDER BY column_name(s); 
