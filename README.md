@@ -155,3 +155,15 @@ WHERE Country IN( 'Argentina' , 'Germany')
 GROUP BY Country
 
 ORDER BY COUNT(CustomerID) desc;
+
+## HAVING
+
+Tiene la funcion de filtrar en funciones de ordenación
+
+SELECT COUNT(CustomerID), Country
+
+FROM Customers
+
+GROUP BY Country
+
+HAVING COUNT(CustomerID) > 5;
