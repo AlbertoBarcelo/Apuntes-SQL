@@ -146,8 +146,12 @@ _ un caracter
 
 *Ejemplos*
 
-SELECT column_name(s)
-FROM table_name
-WHERE condition
-GROUP BY column_name(s)
-ORDER BY column_name(s); 
+SELECT COUNT(CustomerID), Country
+
+FROM Customers
+
+WHERE Country IN( 'Argentina' , 'Germany')
+
+GROUP BY Country
+
+ORDER BY COUNT(CustomerID) desc;
