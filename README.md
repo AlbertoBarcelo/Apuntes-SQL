@@ -167,3 +167,15 @@ FROM Customers
 GROUP BY Country
 
 HAVING COUNT(CustomerID) > 5;
+
+## EXISTS
+
+Su funcion es hacer subquerys
+
+*Ejemplos*
+
+SELECT column_name(s)
+FROM table_name
+WHERE EXISTS
+(SELECT column_name FROM table_name WHERE condition); 
+
